@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1080 890" xmlns="http://www.w3.org/2000/svg" width="1080" height="890" role="img" aria-labelledby="dtitle"><title id="dtitle">Baseball Timer wiring diagram</title><style>
+.w{fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.halo{fill:none;stroke:#ffffff;stroke-width:9}
+.v5{stroke:#d02b3c}.v33{stroke:#d9730d}.mic{stroke:#0f7f86}.spk{stroke:#6b47c9}.sig{stroke:#6b7570}.gnd{stroke:#1d2420}
+.spkw,.cap,.ledbar,.antw{stroke:#1d2420}.antw{stroke-width:1.4;opacity:.5}.rays{stroke:#5d6862;stroke-width:1.4}
+.dot.v5{fill:#d02b3c}.dot.spk{fill:#6b47c9}
+.pin{fill:#ffffff;stroke:#1d2420;stroke-width:1.6}
+.comp{fill:#f7f9f7;stroke:#1d2420;stroke-width:1.6}
+.board{fill:#e4ece7;stroke:#1d2420;stroke-width:1.8}
+.ant{fill:#f7f9f7;stroke:#c9d0cb;stroke-width:1.2}
+.usb,.res{fill:#ffffff;stroke:#1d2420;stroke-width:1.6}
+.led{stroke:#1d2420;stroke-width:1.4}.led.blue{fill:#2b62e3}.led.yellow{fill:#e5b300}.led.red{fill:#d02b3c}.led.green{fill:#1f9d55}
+text{fill:#1d2420;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.pinl{font-size:12px;font-weight:600}.pins{font-size:10.5px;font-weight:600}
+.title{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;font-weight:700}
+.title.sm{font-size:12.5px}.tiny{font-size:10.5px;fill:#5d6862}.ledlbl{font-size:11.5px;font-weight:600}
+.warn{font-size:10.5px;fill:#d9730d;font-weight:600}.v5t{fill:#d02b3c}.spkt{fill:#6b47c9}
+</style><rect width="1080" height="890" fill="#ffffff"/>
+<rect x="440" y="130" width="200" height="420" rx="6" class="board"/>
+<rect x="472" y="138" width="136" height="30" rx="3" class="ant"/>
+<path d="M480 162 l0 -16 l12 0 l0 16 l12 0 l0 -16 l12 0 l0 16 l12 0 l0 -16 l12 0 l0 16 l12 0 l0 -16 l12 0 l0 16 l12 0 l0 -16 l12 0" class="w antw"/>
+<text x="540" y="186" class="tiny" text-anchor="middle">antenna end</text>
+<text x="548" y="490" class="title" text-anchor="middle">ESP32 DevKit</text>
+<text x="548" y="506" class="tiny" text-anchor="middle">ESP-WROOM-32</text>
+<rect x="512" y="536" width="56" height="20" rx="4" class="usb"/>
+<text x="540" y="572" class="tiny" text-anchor="middle">USB-C (programming)</text>
+<rect x="60" y="420" width="140" height="90" rx="6" class="comp"/>
+<text x="60" y="410" class="title" text-anchor="start">USB-C breakout (in case)</text>
+<text x="190" y="449" class="pinl" text-anchor="end">VBUS</text>
+<text x="190" y="489" class="pinl" text-anchor="end">GND</text>
+<text x="70" y="500" class="tiny" text-anchor="start">5.1 kΩ CC resistors</text>
+<text x="285" y="424" class="tiny" text-anchor="middle">Power switch</text>
+<circle cx="262" cy="445" r="3.5" class="pin"/><circle cx="308" cy="445" r="3.5" class="pin"/>
+<path d="M265 443 L304 430" class="w v5"/>
+<path d="M200 445 L258 445" class="w v5"/>
+<path d="M312 445 L330 445 L330 800 L730 800" class="w v5"/>
+<path d="M440 515 L330 515" class="w v5"/>
+<path d="M200 485 L215 485" class="w gnd"/>
+<path d="M215 485 L215 493 M206 493 L224 493 M209 497 L221 497 M212 501 L218 501" class="w gnd"/>
+<text x="345" y="816" class="tiny v5t" text-anchor="start">5V rail (switched)</text>
+<rect x="110" y="160" width="160" height="190" rx="6" class="comp"/>
+<text x="110" y="150" class="title" text-anchor="start">INMP441 microphone</text>
+<text x="260" y="184" class="pinl" text-anchor="end">VDD</text>
+<text x="260" y="244" class="pinl" text-anchor="end">SD</text>
+<text x="260" y="284" class="pinl" text-anchor="end">WS</text>
+<text x="260" y="324" class="pinl" text-anchor="end">SCK</text>
+<path d="M270 180 L440 180" class="w v33"/>
+<text x="355" y="172" class="warn" text-anchor="middle">3.3 V only — never 5 V</text>
+<path d="M270 240 L440 240" class="w mic"/>
+<path d="M270 280 L440 280" class="w mic"/>
+<path d="M270 320 L440 320" class="w mic"/>
+<text x="160" y="340" class="pinl" text-anchor="middle">L/R</text>
+<text x="220" y="340" class="pinl" text-anchor="middle">GND</text>
+<path d="M160 350 L160 360 M151 360 L169 360 M154 364 L166 364 M157 368 L163 368" class="w gnd"/>
+<path d="M220 350 L220 360 M211 360 L229 360 M214 364 L226 364 M217 368 L223 368" class="w gnd"/>
+<path d="M440 380 L380 380 L380 610 L750 610" class="halo"/>
+<path d="M440 380 L380 380 L380 610 L750 610" class="w spk"/>
+<path d="M440 420 L400 420 L400 590 L720 590" class="halo"/>
+<path d="M440 420 L400 420 L400 590 L720 590" class="w spk"/>
+<path d="M640 280 L1035 280 L1035 630 L500 630" class="halo"/>
+<path d="M640 280 L1035 280 L1035 630 L500 630" class="w spk"/>
+<text x="392" y="586" class="tiny spkt" text-anchor="end">BCLK</text>
+<text x="372" y="606" class="tiny spkt" text-anchor="end">LRC</text>
+<text x="1029" y="624" class="tiny spkt" text-anchor="end">DIN</text>
+<path d="M440 660 L440 590" class="halo"/>
+<path d="M440 660 L440 590" class="w spk"/>
+<path d="M470 660 L470 610" class="halo"/>
+<path d="M470 660 L470 610" class="w spk"/>
+<path d="M500 660 L500 630" class="halo"/>
+<path d="M500 660 L500 630" class="w spk"/>
+<circle cx="440" cy="590" r="4.5" class="dot spk"/>
+<circle cx="470" cy="610" r="4.5" class="dot spk"/>
+<circle cx="500" cy="630" r="4.5" class="dot spk"/>
+<rect x="420" y="660" width="140" height="80" rx="6" class="comp"/>
+<text x="440" y="675" class="pins" text-anchor="middle">BCLK</text>
+<text x="470" y="675" class="pins" text-anchor="middle">LRC</text>
+<text x="500" y="675" class="pins" text-anchor="middle">DIN</text>
+<text x="450" y="733" class="pins" text-anchor="middle">VIN</text>
+<text x="530" y="733" class="pins" text-anchor="middle">GND</text>
+<text x="482" y="700" class="title sm" text-anchor="middle">MAX98357A</text>
+<text x="482" y="714" class="tiny" text-anchor="middle">Amp 1</text>
+<text x="554" y="689" class="pins" text-anchor="end">+</text>
+<text x="554" y="719" class="pins" text-anchor="end">−</text>
+<path d="M450 740 L450 800" class="w v5"/>
+<circle cx="450" cy="800" r="4.5" class="dot v5"/>
+<path d="M530 740 L530 750 M521 750 L539 750 M524 754 L536 754 M527 758 L533 758" class="w gnd"/>
+<path d="M560 685 L595 685" class="w spkw"/>
+<path d="M560 715 L595 715" class="w spkw"/>
+<rect x="595" y="678" width="14" height="44" rx="2" class="comp"/>
+<path d="M609 678 L633 664 L633 736 L609 722 Z" class="comp"/>
+<text x="614" y="752" class="tiny" text-anchor="middle">Speaker 1</text>
+<text x="614" y="766" class="tiny" text-anchor="middle">4 Ω, + to +</text>
+<path d="M720 660 L720 590" class="halo"/>
+<path d="M720 660 L720 590" class="w spk"/>
+<path d="M750 660 L750 610" class="halo"/>
+<path d="M750 660 L750 610" class="w spk"/>
+<path d="M780 660 L780 630" class="halo"/>
+<path d="M780 660 L780 630" class="w spk"/>
+<circle cx="720" cy="590" r="4.5" class="dot spk"/>
+<circle cx="750" cy="610" r="4.5" class="dot spk"/>
+<circle cx="780" cy="630" r="4.5" class="dot spk"/>
+<rect x="700" y="660" width="140" height="80" rx="6" class="comp"/>
+<text x="720" y="675" class="pins" text-anchor="middle">BCLK</text>
+<text x="750" y="675" class="pins" text-anchor="middle">LRC</text>
+<text x="780" y="675" class="pins" text-anchor="middle">DIN</text>
+<text x="730" y="733" class="pins" text-anchor="middle">VIN</text>
+<text x="810" y="733" class="pins" text-anchor="middle">GND</text>
+<text x="762" y="700" class="title sm" text-anchor="middle">MAX98357A</text>
+<text x="762" y="714" class="tiny" text-anchor="middle">Amp 2</text>
+<text x="834" y="689" class="pins" text-anchor="end">+</text>
+<text x="834" y="719" class="pins" text-anchor="end">−</text>
+<path d="M730 740 L730 800" class="w v5"/>
+<circle cx="730" cy="800" r="4.5" class="dot v5"/>
+<path d="M810 740 L810 750 M801 750 L819 750 M804 754 L816 754 M807 758 L813 758" class="w gnd"/>
+<path d="M840 685 L875 685" class="w spkw"/>
+<path d="M840 715 L875 715" class="w spkw"/>
+<rect x="875" y="678" width="14" height="44" rx="2" class="comp"/>
+<path d="M889 678 L913 664 L913 736 L889 722 Z" class="comp"/>
+<text x="894" y="752" class="tiny" text-anchor="middle">Speaker 2</text>
+<text x="894" y="766" class="tiny" text-anchor="middle">4 Ω, + to +</text>
+<path d="M670 800 L670 818" class="w v5"/>
+<circle cx="670" cy="800" r="4.5" class="dot v5"/>
+<path d="M656 818 L684 818" class="w cap"/>
+<path d="M656 832 Q670 824 684 832" class="w cap"/>
+<text x="650" y="816" class="pins" text-anchor="end">+</text>
+<path d="M670 829 L670 846" class="w gnd"/>
+<path d="M670 846 L670 854 M661 854 L679 854 M664 858 L676 858 M667 862 L673 862" class="w gnd"/>
+<text x="694" y="830" class="tiny" text-anchor="start">470–1000 µF</text>
+<text x="694" y="844" class="tiny" text-anchor="start">stripe (−) to GND</text>
+<path d="M640 230 L740 230 L740 90 L790 90" class="w sig"/>
+<rect x="790" y="84" width="50" height="12" rx="2" class="res"/>
+<text x="815" y="76" class="tiny" text-anchor="middle">330 Ω</text>
+<path d="M840 90 L868 90" class="w sig"/>
+<path d="M868 80 L868 100 L890 90 Z" class="led green"/>
+<path d="M890 80 L890 100" class="w ledbar"/>
+<path d="M876 76 l6 -8 m-4 0 l4 0 l0 4 M884 76 l6 -8 m-4 0 l4 0 l0 4" class="w rays"/>
+<path d="M890 90 L930 90 L930 100" class="w gnd"/>
+<path d="M930 100 L930 108 M921 108 L939 108 M924 112 L936 112 M927 116 L933 116" class="w gnd"/>
+<text x="879" y="124" class="ledlbl" text-anchor="middle">Green · ticks</text>
+<path d="M640 330 L945 330 L945 452" class="w sig"/>
+<rect x="939" y="452" width="12" height="44" rx="2" class="res"/>
+<text x="955" y="478" class="tiny" text-anchor="start">330 Ω</text>
+<path d="M945 496 L945 518" class="w sig"/>
+<path d="M935 518 L955 518 L945 540 Z" class="led red"/>
+<path d="M935 540 L955 540" class="w ledbar"/>
+<path d="M958 524 l8 -6 m-4 0 l4 0 l0 4 M958 532 l8 -6 m-4 0 l4 0 l0 4" class="w rays"/>
+<path d="M945 540 L945 560" class="w gnd"/>
+<path d="M945 560 L945 568 M936 568 L954 568 M939 572 L951 572 M942 576 L948 576" class="w gnd"/>
+<text x="945" y="600" class="ledlbl" text-anchor="middle">Red</text>
+<text x="945" y="613" class="tiny" text-anchor="middle">time's up</text>
+<path d="M640 380 L868 380 L868 452" class="w sig"/>
+<rect x="862" y="452" width="12" height="44" rx="2" class="res"/>
+<text x="878" y="478" class="tiny" text-anchor="start">330 Ω</text>
+<path d="M868 496 L868 518" class="w sig"/>
+<path d="M858 518 L878 518 L868 540 Z" class="led yellow"/>
+<path d="M858 540 L878 540" class="w ledbar"/>
+<path d="M881 524 l8 -6 m-4 0 l4 0 l0 4 M881 532 l8 -6 m-4 0 l4 0 l0 4" class="w rays"/>
+<path d="M868 540 L868 560" class="w gnd"/>
+<path d="M868 560 L868 568 M859 568 L877 568 M862 572 L874 572 M865 576 L871 576" class="w gnd"/>
+<text x="868" y="600" class="ledlbl" text-anchor="middle">Yellow</text>
+<text x="868" y="613" class="tiny" text-anchor="middle">armed</text>
+<path d="M640 430 L791 430 L791 452" class="w sig"/>
+<rect x="785" y="452" width="12" height="44" rx="2" class="res"/>
+<text x="801" y="478" class="tiny" text-anchor="start">330 Ω</text>
+<path d="M791 496 L791 518" class="w sig"/>
+<path d="M781 518 L801 518 L791 540 Z" class="led blue"/>
+<path d="M781 540 L801 540" class="w ledbar"/>
+<path d="M804 524 l8 -6 m-4 0 l4 0 l0 4 M804 532 l8 -6 m-4 0 l4 0 l0 4" class="w rays"/>
+<path d="M791 540 L791 560" class="w gnd"/>
+<path d="M791 560 L791 568 M782 568 L800 568 M785 572 L797 572 M788 576 L794 576" class="w gnd"/>
+<text x="791" y="600" class="ledlbl" text-anchor="middle">Blue</text>
+<text x="791" y="613" class="tiny" text-anchor="middle">power</text>
+<path d="M640 180 L668 180" class="w gnd"/>
+<path d="M668 180 L668 188 M659 188 L677 188 M662 192 L674 192 M665 196 L671 196" class="w gnd"/>
+<path d="M440 470 L424 470" class="w gnd"/>
+<path d="M424 470 L424 478 M415 478 L433 478 M418 482 L430 482 M421 486 L427 486" class="w gnd"/>
+<circle cx="440" cy="180" r="3.2" class="pin"/>
+<text x="450" y="184" class="pinl" text-anchor="start">3V3</text>
+<circle cx="440" cy="240" r="3.2" class="pin"/>
+<text x="450" y="244" class="pinl" text-anchor="start">GPIO 35</text>
+<circle cx="440" cy="280" r="3.2" class="pin"/>
+<text x="450" y="284" class="pinl" text-anchor="start">GPIO 32</text>
+<circle cx="440" cy="320" r="3.2" class="pin"/>
+<text x="450" y="324" class="pinl" text-anchor="start">GPIO 33</text>
+<circle cx="440" cy="380" r="3.2" class="pin"/>
+<text x="450" y="384" class="pinl" text-anchor="start">GPIO 25</text>
+<circle cx="440" cy="420" r="3.2" class="pin"/>
+<text x="450" y="424" class="pinl" text-anchor="start">GPIO 26</text>
+<circle cx="440" cy="470" r="3.2" class="pin"/>
+<text x="450" y="474" class="pinl" text-anchor="start">GND</text>
+<circle cx="440" cy="515" r="3.2" class="pin"/>
+<text x="450" y="519" class="pinl" text-anchor="start">5V / VIN</text>
+<circle cx="640" cy="180" r="3.2" class="pin"/>
+<text x="630" y="184" class="pinl" text-anchor="end">GND</text>
+<circle cx="640" cy="230" r="3.2" class="pin"/>
+<text x="630" y="234" class="pinl" text-anchor="end">GPIO 23</text>
+<circle cx="640" cy="280" r="3.2" class="pin"/>
+<text x="630" y="284" class="pinl" text-anchor="end">GPIO 22</text>
+<circle cx="640" cy="330" r="3.2" class="pin"/>
+<text x="630" y="334" class="pinl" text-anchor="end">GPIO 21</text>
+<circle cx="640" cy="380" r="3.2" class="pin"/>
+<text x="630" y="384" class="pinl" text-anchor="end">GPIO 19</text>
+<circle cx="640" cy="430" r="3.2" class="pin"/>
+<text x="630" y="434" class="pinl" text-anchor="end">GPIO 18</text>
+<circle cx="270" cy="180" r="3.2" class="pin"/>
+<circle cx="270" cy="240" r="3.2" class="pin"/>
+<circle cx="270" cy="280" r="3.2" class="pin"/>
+<circle cx="270" cy="320" r="3.2" class="pin"/>
+<circle cx="200" cy="445" r="3.2" class="pin"/>
+<circle cx="200" cy="485" r="3.2" class="pin"/>
+</svg>
